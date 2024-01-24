@@ -1,0 +1,65 @@
+@media (max-width: 768px) {
+  .container .newsletter-card {
+    flex-direction: column-reverse;
+    align-items: center;
+    max-width: 420px;
+  }
+
+  .container .newsletter-card .receive-updates {
+    width: 350px;
+    margin-top: -2.5rem;
+    padding: 0;
+  }
+
+  .container .newsletter-card .receive-updates form {
+    margin-bottom: 2.188rem;
+  }
+
+  .container .newsletter-card .receive-updates form input,
+  .container .newsletter-card .receive-updates .subscribe-button {
+    width: 100%;
+  }
+
+  .container .newsletter-card .img-sing-up img {
+    content: url(../../assets/images/illustration-sign-up-mobile.svg);
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+  }
+  .container .newsletter-card .receive-updates form span {
+    top: 5px;
+    right: 2px;
+  }
+}
+
+@media (max-width: 425px) {
+  .container {
+    background-color: var(--white);
+  }
+  .container .newsletter-card {
+    width: 100vw;
+    min-height: 100vh;
+    padding: 0;
+  }
+  .container .newsletter-card .receive-updates {
+    padding: 0 0.75rem;
+    width: 330px;
+  }
+
+  .container .newsletter-card .img-sing-up img {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+
+  .thank-you-card {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    border-radius: 0;
+  }
+
+  .thank-you-card > div {
+    margin-top: 40%;
+  }
+}

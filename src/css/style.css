@@ -1,0 +1,165 @@
+.container {
+  background-color: var(--Grey-700);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container .newsletter-card {
+  display: flex;
+  background-color: var(--white);
+  max-width: 900px;
+  padding: 1.25rem;
+  border-radius: 20px;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 1s ease-in;
+}
+.container .newsletter-card .receive-updates {
+  padding-left: 2.5rem;
+  width: 65%;
+  color: var(--Grey-400);
+}
+
+.container .newsletter-card .receive-updates h1 {
+  font-size: 3.125rem;
+  color: var(--Grey-600);
+  margin-top: 4.375rem;
+}
+.container .newsletter-card .receive-updates > p {
+  margin: 1.25 0;
+  font-size: 1.125rem;
+}
+
+.container .newsletter-card .receive-updates ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin: 1.25rem 0;
+}
+
+.container .newsletter-card .receive-updates ul li::before {
+  content: url(../../assets/images/icon-list.svg);
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 1rem;
+}
+
+/* Form */
+.container .newsletter-card .receive-updates form{
+  position: relative;
+}
+
+.container .newsletter-card .receive-updates form > p {
+  font-weight: bold;
+  margin-bottom: 0.375rem;
+  color: var(--black);
+}
+
+.container .newsletter-card .receive-updates input {
+  border-radius: 10px;
+  padding: 0.9375rem;
+  width: 80%;
+  margin-bottom: 1.25rem;
+  outline: none;
+}
+
+.container .newsletter-card .receive-updates input::placeholder {
+  color: inherit;
+}
+
+.container .newsletter-card .receive-updates form span {
+  display: none;
+  color: var(--Red-500);
+  font-size: 0.75rem;
+  position: absolute;
+  right: 95px;
+  top: 5px;
+}
+
+.container .newsletter-card .receive-updates .subscribe-button {
+  background-color: var(--Grey-700);
+  padding: 0.9375rem;
+  width: 80%;
+  border-radius: 10px;
+  border: none;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.container .newsletter-card .receive-updates .subscribe-button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.container .newsletter-card .receive-updates .subscribe-button:focus {
+  background: #ff5377;
+  background: linear-gradient(112deg, #ff5377 27%, #ff693d 80%);
+  box-shadow: -2px 7px 20px 2px #ff6a3d70;
+}
+
+/* Image Sing Up */
+.container .newsletter-card .img-sing-up img{
+  width: 100%;
+  height: 100%;
+}
+
+/* Thank You Card */
+.thank-you-card {
+  position: absolute;
+  background-color: var(--white);
+  max-width: 350px;
+  padding: 2.5rem 1.25rem;
+  border-radius: 20px;
+  transition: opacity 1s ease-in;
+}
+
+.thank-you-card img {
+  width: 2.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.thank-you-card h2 {
+  font-size: 2.5rem;
+  line-height: 1;
+  color: var(--Grey-700);
+  margin-bottom: 0.94rem;
+}
+
+.thank-you-card p {
+  font-size: 0.81rem;
+  margin-bottom: 1.875rem;
+  line-height: 1.125rem;
+}
+
+.thank-you-card p span {
+  font-weight: bold;
+}
+
+.thank-you-card .dismiss-button {
+  background-color: var(--Grey-700);
+  color: var(--white);
+  padding: 0.81rem;
+  width: 100%;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+}
+
+.thank-you-card .dismiss-button:active {
+  background: var(--Red-600);
+  background: linear-gradient(112deg, var(--Red-600) 27%, var(--Orange-500) 80%);
+  box-shadow: -2px 7px 20px 2px var(--Orange-500-Opacity);
+}
+
+/* Css in JS */
+.invalid-email{
+  border: 2px solid #ff6257;
+  color: #ff6257;
+  background-color: #ff62571a;
+}
+
+.container .hidden{
+  opacity: 0; 
+  visibility: hidden
+}
